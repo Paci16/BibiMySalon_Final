@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "609195577477",
+    "project_id": "bibimysalon-3",
+    "storage_bucket": "bibimysalon-3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609195577477:android:26d0f8aadebfe742e219ec",
+        "android_client_info": {
+          "package_name": "com.example.bibimysalon_klmpk6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9_FBtUBbymCDGrJHRSQuSc6jKxKf--P4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

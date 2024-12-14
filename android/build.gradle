@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        google() // Repositori Google
+        mavenCentral() // Repositori Maven Central
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+allprojects {
+    repositories {
+        google() // Repositori Google
+        mavenCentral() // Repositori Maven Central
+        jcenter() // Tambahkan jika diperlukan (opsional)
+    }
+}
+
+// Mengatur direktori build
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+// Task untuk membersihkan build
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
